@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Gym Equipment E-commerce Design System
+All colors MUST be HSL. Bold, modern, athletic aesthetic.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 12 15% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 12 10% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 12 10% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 14 100% 57%;
+    --primary-foreground: 12 15% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 12 15% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 12 8% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 12 15% 8%;
+
+    --success: 120 100% 40%;
+    --success-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 12 8% 20%;
+    --input: 12 8% 16%;
+    --ring: 14 100% 57%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradients for modern athletic design */
+    --gradient-primary: linear-gradient(135deg, hsl(14 100% 57%) 0%, hsl(14 100% 45%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(195 100% 40%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(12 15% 8%) 0%, hsl(12 10% 12%) 50%, hsl(14 100% 57% / 0.1) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(12 10% 12%) 0%, hsl(12 8% 16%) 100%);
+    
+    /* Shadows with primary color glow */
+    --shadow-glow: 0 0 30px hsl(14 100% 57% / 0.3);
+    --shadow-card: 0 8px 32px hsl(12 15% 8% / 0.6);
+    --shadow-button: 0 4px 16px hsl(14 100% 57% / 0.4);
 
     --sidebar-background: 0 0% 98%;
 
